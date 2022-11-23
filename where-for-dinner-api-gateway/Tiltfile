@@ -18,5 +18,5 @@ k8s_custom_deploy(
     ]
 )
 
-k8s_resource('where-for-dinner', port_forwards=["8080:8080"],
+k8s_resource('where-for-dinner', port_forwards=["<PORT>:8080"],
     extra_pod_selectors=[{'carto.run/workload-name': 'where-for-dinner', 'app.kubernetes.io/component': 'run'}])
