@@ -2,7 +2,6 @@ SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='<SOURCE_IMAGE>')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='<NAMESPACE>')
 
-allow_k8s_contexts('<CLUSTER_CONTEXT>')
 k8s_custom_deploy(
     'where-for-dinner-availability',
     apply_cmd="tanzu apps workload apply -f config/workload.yaml --live-update" +
