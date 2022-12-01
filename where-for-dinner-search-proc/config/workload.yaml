@@ -24,3 +24,10 @@ spec:
       ref:
         branch: main
     subPath: where-for-dinner-search-proc
+  resources:     
+    requests:         
+      memory: "250M"
+      cpu: "100m"
+    limits:         
+      memory: "3.0G"
+      cpu: "2000m" 
