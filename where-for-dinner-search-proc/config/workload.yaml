@@ -26,8 +26,8 @@ spec:
     subPath: where-for-dinner-search-proc
   resources:     
     requests:         
-      memory: "250M"
+      memory: "1.0G"
       cpu: "100m"
     limits:         
-      memory: "2.0G"
+      memory: "1.5G"
       cpu: "1500m" 
